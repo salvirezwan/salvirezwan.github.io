@@ -12,7 +12,7 @@
 
 <br />
 
-### Demo Screeshots
+### Screenshot
 
-![Jack Portfolio Desktop Demo](./readme-images/desktop.png "Desktop Demo")
+![Salvi Portfolio Desktop Demo](./readme-images/desktop_salvi.png "Desktop Demo")
 
