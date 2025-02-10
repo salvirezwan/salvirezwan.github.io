@@ -475,7 +475,7 @@ main { overflow-x: hidden; }
 .hero-banner {
   max-width: 500px;
   width: 125%;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
 }
 
 :is(.hero-social-list, .scroll-down) { display: none; }
@@ -484,8 +484,8 @@ main { overflow-x: hidden; }
 
 .hero-title {
   text-align: center;
-  margin-top: 400px;
-  margin-bottom: 280px;
+  /* margin-top: 400px; */
+  margin-bottom: 30px;
 }
 
 .hero .btn-primary { margin-inline: auto; }
