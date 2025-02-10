@@ -475,16 +475,17 @@ main { overflow-x: hidden; }
 .hero-banner {
   max-width: 500px;
   width: 125%;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 
 :is(.hero-social-list, .scroll-down) { display: none; }
 
-.hero-content { max-width: 500px; }
+.hero-content { max-width: 1000px; }
 
 .hero-title {
   text-align: center;
-  margin-bottom: 30px;
+  margin-top: 400px;
+  margin-bottom: 280px;
 }
 
 .hero .btn-primary { margin-inline: auto; }
@@ -542,7 +543,7 @@ main { overflow-x: hidden; }
   color: var(--color-primary);
   font-size: initial;
   line-height: 1.3;
-  margin-top: 5px;
+  margin-top: 5spx;
 }
 
 .stats-card > ion-icon { color: var(--color-secondary); }
