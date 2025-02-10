@@ -1131,6 +1131,7 @@ textarea.input-field {
     height: 100%;
     width: auto;
     margin-inline: auto;
+    padding-top: 100px;
   }
 
   .hero-content {
