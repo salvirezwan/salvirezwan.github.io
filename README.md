@@ -4,7 +4,7 @@
 
   <h2 align="center">Salvi - Personal Portfolio</h2>
 
-  This website is fully responsive personal portfolio, <br />Responsive for all devices, built using HTML, CSS, and JavaScript.
+  This website is a fully responsive personal portfolio. <br />Responsive for all devices. Built using HTML, CSS and JavaScript.
 
   <a href="https://salvirezwan.github.io/"><strong>➥ View portfolio</strong></a>
 
