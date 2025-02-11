@@ -958,12 +958,6 @@ textarea.input-field {
     margin-inline: auto;
   }
 
-  .hero-title {
-    text-align: center;
-    padding-left: 44px;
-    /* color: var(--color-primary); */
-  }
-
   .section-title { max-width: 380px; }
 
 
@@ -998,12 +992,6 @@ textarea.input-field {
   .container { max-width: 720px; }
 
   .section-title { max-width: 430px; }
-
-  .hero-title {
-    text-align: center;
-    padding-left: 44px;
-    /* color: var(--color-primary); */
-  }
 
 
 
