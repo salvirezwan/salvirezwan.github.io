@@ -212,6 +212,12 @@ body.active { overflow: hidden; }
   transition: var(--transition-1);
 }
 
+.btn-group {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+}
+
 .btn-primary { border-color: var(--color-primary); }
 
 .btn-primary:is(:hover, :focus) {
