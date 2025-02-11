@@ -1346,6 +1346,13 @@ textarea.input-field {
 }
 
 
+@media (max-width: 992px) {
+  .hero img {
+    margin-left: -10px; 
+    /* padding-top: 25px;   */
+  }
+}
+
 
 
 
