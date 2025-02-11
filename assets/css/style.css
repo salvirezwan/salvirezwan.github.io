@@ -509,7 +509,10 @@ main { overflow-x: hidden; }
  * #STATS
 \*-----------------------------------*/
 
-.stats { padding-block: var(--section-padding); }
+.stats { 
+  padding-block: var(--section-padding);
+  padding-top:32px; 
+}
 
 .stats-list {
   display: grid;
@@ -1161,7 +1164,7 @@ textarea.input-field {
     height: 100%;
     width: auto;
     margin-inline: auto;
-    padding-top: 80px;
+    padding-top: 25px;
   }
 
   .hero-content {
@@ -1170,14 +1173,16 @@ textarea.input-field {
     position: absolute;
     top: 50%;
     /* filter: drop-shadow(2px 4px 10px var(--black)); */
-    padding-top: 400px;
+    padding-top: 350px;
   }
 
   .hero-title {
     text-align: center;
-    margin-bottom: 300px;
+    margin-bottom: 280px;
+    padding-left: 43px;
     /* color: var(--color-primary); */
   }
+
 
   /* .hero .btn-primary:is(:hover, :focus) { 
     color: hsl(0, 0%, 12%); 
