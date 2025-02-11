@@ -214,6 +214,7 @@ body.active { overflow: hidden; }
 
 .btn-group {
   align-items: center; 
+  text-align: center;
 }
 
 .btn-primary { 
