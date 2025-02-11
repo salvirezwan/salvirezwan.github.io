@@ -1180,7 +1180,7 @@ textarea.input-field {
   .hero-title {
     text-align: center;
     margin-bottom: 280px;
-    padding-left: 44px;
+    /* padding-left: 44px; */
     /* color: var(--color-primary); */
   }
 
@@ -1344,15 +1344,6 @@ textarea.input-field {
   .footer .logo { margin-bottom: 0; }
 
 }
-
-
-@media (max-width: 992px) {
-  .hero img {
-    margin-left: -10px; 
-    /* padding-top: 25px;   */
-  }
-}
-
 
 
 
