@@ -213,20 +213,19 @@ body.active { overflow: hidden; }
 }
 
 .btn-group {
-  /* display: flex; */
-  /* justify-content: center;  */
   align-items: center; 
 }
 
-.btn-primary { border-color: var(--color-primary); }
+.btn-primary { 
+  border-color: var(--color-primary);
+  align-items: center; 
+  text-align: center;  
+}
 
 .btn-primary:is(:hover, :focus) {
   background: var(--color-primary);
   color: var(--bg-primary);
-  /* display: inline-flex; */
-  /* justify-content: center; */
   align-items: center; 
-  /* padding: 12px 24px;  */
   text-align: center; 
 }
 
