@@ -45,6 +45,24 @@ navToggleBtn.addEventListener("click", function () {
 });
 
 
+const navbarLinks = document.querySelectorAll(".navbar-link");
+// Function to check if it's a mobile screen
+const isMobile = window.matchMedia("(max-width: 768px)").matches;
+
+// Close navbar on link click (only for mobile screens)
+if (isMobile) {
+  navbarLinks.forEach(link => {
+    link.addEventListener("click", () => {
+      if (navbar.classList.contains("active")) {
+        navbar.classList.remove("active");
+        document.body.classList.remove("active"); // Optional: Close the body overlay if any
+        navToggleBtn.classList.remove("active"); // Optional: Close the hamburger menu if clicked
+      }
+    });
+  });
+}
+
+
 
 /**
  * skills toggle

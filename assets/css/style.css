@@ -89,8 +89,13 @@ body.dark_theme {
 
 body.light_theme {
 
-  --bg-primary: hsl(0, 0%, 90%);
-  --bg-secondary: hsl(0, 0%, 100%);
+  /* --bg-primary: hsl(0, 0%, 90%); */
+
+  /* --bg-primary: hsl(0, 0%, 97%); */
+  --bg-primary: hsl(300, 20%, 94%);
+  --bg-secondary: hsl(0, 0%, 84%);
+
+  /* --bg-secondary: hsl(0, 0%, 100%); */
   --color-primary: hsl(0, 0%, 12%);
   --color-secondary: hsl(0, 0%, 37%);
   --card-shadow: hsla(0, 0%, 0%, 0.1);
@@ -444,6 +449,7 @@ body.active { overflow: hidden; }
   transition: 0.75s cubic-bezier(0.68, -0.55, 0.27, 2);
 }
 
+
 .navbar.active .navbar-link {
   transform: translateY(0);
   transition-delay: 0.5s;
@@ -461,7 +467,12 @@ body.active { overflow: hidden; }
   transition: var(--transition-1);
 }
 
-.navbar-link:is(:hover, :focus)::before { width: 100%; }
+.navbar-link:is(:hover, :focus)::before { 
+  /* width: 100%;  */
+  width: 0;
+}
+
+
 
 
 
@@ -1034,6 +1045,11 @@ textarea.input-field {
 
 
 @media (max-width: 768px) {
+
+  .hero-banner {
+    margin-top: -60px; /* Adjust this value as needed */
+  }
+
   .project-card .card-title,
   .project-card .publish-date {
     opacity: 0;
@@ -1162,6 +1178,7 @@ textarea.input-field {
     height: 100%;
     margin-bottom: 0;
   }
+
 
   .hero img {
     height: 100%;
