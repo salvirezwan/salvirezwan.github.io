@@ -103,3 +103,27 @@ if (localStorage.getItem("theme") === "light_theme") {
   document.body.classList.remove("light_theme");
   document.body.classList.add("dark_theme");
 }
+
+
+/**
+ * Show project card text on scroll (for mobile)
+ */
+
+document.addEventListener("DOMContentLoaded", function () {
+  const projectCards = document.querySelectorAll(".project-card");
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("in-view");
+        }
+      });
+    },
+    { threshold: 0.3 }
+  );
+
+  projectCards.forEach((card) => {
+    observer.observe(card);
+  });
+});

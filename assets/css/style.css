@@ -1033,18 +1033,20 @@ textarea.input-field {
 }
 
 
-/* @media (max-width: 768px) {
-  .project-card:active::after {
-    background: hsla(0, 0%, 100%, 0.1);
-    backdrop-filter: blur(0.5px);
+@media (max-width: 768px) {
+  .project-card .card-title,
+  .project-card .publish-date {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
   }
 
-  .project-card:active .card-title,
-  .project-card:active .publish-date {
-    transform: translateY(0);
+  .project-card.in-view .card-title,
+  .project-card.in-view .publish-date {
     opacity: 1;
+    transform: translateY(0);
   }
-} */
+}
 
 
 
