@@ -272,10 +272,10 @@ body.active { overflow: hidden; }
   margin-bottom: 30px;
 }
 
-.section-text {
+/* .section-text {
   text-align: justify;
   max-width: 93%;
-}
+} */
 
 
 .tooltip {
@@ -1128,10 +1128,10 @@ textarea.input-field {
   }
 
 
-  /* .section-text {
+  .section-text {
   text-align: justify;
   max-width: 94%;
-} */
+}
 
 
 
