@@ -1197,23 +1197,20 @@ textarea.input-field {
     height: 100%;
     width: auto;
     margin-inline: auto;
-    padding-top: 25px;
+    /* padding-top: 25px; */
   }
 
   .hero-content {
     /* --color-primary: var(--white); */
 
     position: absolute;
-    top: 50%;
-    /* filter: drop-shadow(2px 4px 10px var(--black)); */
+    top: 55%;
     padding-top: 350px;
   }
 
   .hero-title {
     text-align: center;
     margin-bottom: 280px;
-    /* padding-left: 44px; */
-    /* color: var(--color-primary); */
   }
 
 
@@ -1400,30 +1397,17 @@ textarea.input-field {
    * HERO
    */
 
-  
-  
 
-  .hero img {
-    height: 100%;
-    width: auto;
-    margin-inline: auto;
-    padding-top: 25px;
-  }
 
   .hero-content {
     position: absolute;
-    top: 50%;
-    padding-top: 350px;
+    top: 35%;
+    padding-top: 450px;
   }
 
-  .hero-title {
-    text-align: center;
-    margin-bottom: 280px;
-  }
+   .hero-social-list { left: -40px; }
 
-   .hero-social-list { left: -80px; }
-
-  .scroll-down { right: -80px; }
+  .scroll-down { right: -40px; }
 
 
 
@@ -1435,3 +1419,4 @@ textarea.input-field {
   .about-banner { max-width: 450px; }
 
 }
+
