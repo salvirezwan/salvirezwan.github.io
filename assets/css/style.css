@@ -235,6 +235,27 @@ body.active { overflow: hidden; }
   text-align: center; 
 }
 
+.btn-container {
+  display: flex;
+  justify-content: center;  /* Centers horizontally */
+  align-items: center;      /* Centers vertically */
+  padding-top: 20px; 
+  padding-bottom: 50px; 
+}
+
+.btn-touch { 
+  border-color: var(--color-primary);
+  align-items: center; 
+  text-align: center; 
+}
+
+.btn-touch:is(:hover, :focus) {
+  background: var(--color-primary);
+  color: var(--bg-primary);
+  align-items: center; 
+  text-align: center; 
+}
+
 .btn-secondary {
   background: var(--raw-seinna);
   border-color: var(--raw-seinna);
@@ -491,19 +512,19 @@ body.active { overflow: hidden; }
 main { overflow-x: hidden; }
 
 .hero {
-  min-height: 100vh;
+  min-height: 75vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding-top: 115px;
-  margin-bottom: var(--section-padding);
+  /* margin-bottom: var(--section-padding); */
 }
 
 .hero-banner {
   max-width: 500px;
   width: 125%;
-  margin-bottom: 30px;
+  /* margin-bottom: 30px; */
 }
 
 :is(.hero-social-list, .scroll-down) { display: none; }
@@ -527,8 +548,9 @@ main { overflow-x: hidden; }
 \*-----------------------------------*/
 
 .stats { 
-  padding-block: var(--section-padding);
-  padding-top:32px; 
+  padding-block: var(-s-section-padding);
+  padding-top:36px; 
+  padding-bottom:45px; 
 }
 
 .stats-list {
@@ -1210,7 +1232,7 @@ textarea.input-field {
 
   .hero-title {
     text-align: center;
-    margin-bottom: 280px;
+    /* margin-bottom: 280px; */
   }
 
 
