@@ -1091,6 +1091,17 @@ textarea.input-field {
 
   .project-list > li:first-child { column-span: all; }
 
+  /**
+   * RESEARCH
+   */
+
+  .research-list {
+    column-count: 2;
+    column-gap: 25px;
+  }
+
+  .research-list > li:first-child { column-span: all; }
+
 }
 
 
@@ -1165,6 +1176,19 @@ textarea.input-field {
 
   .project-card.in-view .card-title,
   .project-card.in-view .publish-date {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  research-card .card-title,
+  .research-card .publish-date {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+  }
+
+  .research-card.in-view .card-title,
+  .research-card.in-view .publish-date {
     opacity: 1;
     transform: translateY(0);
   }
