@@ -795,6 +795,84 @@ main { overflow-x: hidden; }
 
 
 
+/*-----------------------------------*\
+ * #RESEARCH
+\*-----------------------------------*/
+
+.research { padding-block: var(--section-padding); }
+
+.research-list > li { margin-bottom: 25px; }
+
+.research-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--radius-12);
+  box-shadow: 2px 4px 6px hsla(0, 0%, 0%, 0.2);
+}
+
+.research-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  transition: var(--transition-1);
+}
+
+.research-card:is(:hover, :focus)::after {
+  background: hsla(0, 0%, 100%, 0.1);
+  backdrop-filter: blur(0.5px);
+}
+
+.research-card .card-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+}
+
+.research-card .card-title { margin-bottom: 10px; }
+
+.research-card :is(.card-title, .publish-date) {
+  background: var(--bg-primary);
+  padding: 6px 12px;
+  width: max-content;
+  box-shadow: var(--shadow-1);
+  transform: translateY(20px);
+  opacity: 0;
+  transition: var(--transition-1);
+}
+
+.research-card .publish-date {
+  font-size: var(--fs-6);
+  color: var(--color-primary);
+  transition-delay: 0s;
+}
+
+/* .research-card:is(:hover, :focus) :is(.card-title, .publish-date) {
+  transform: translateY(0);
+  opacity: 1;
+} */
+
+.research-card:is(:hover, :focus, :active) :is(.card-title, .publish-date) {
+  transform: translateY(0);
+  opacity: 1;
+  transition-delay: 0s;
+}
+
+
+.research-card:is(:hover, :focus) .publish-date { transition-delay: 0.1s; }
+
+.load-more {
+  font-size: var(--fs-4);
+  color: var(--raw-seinna);
+  text-decoration: underline;
+  margin-inline: auto;
+}
+
+
+
+
 
 /*-----------------------------------*\
  * #CONTACT
@@ -1357,6 +1435,19 @@ textarea.input-field {
   .project-list { column-count: 3; }
 
   .project-list > li:first-child {
+    column-span: unset;
+    margin: 25px;
+    margin-left: 0;
+  }
+
+
+    /**
+   * RESEARCH
+   */
+
+  .research-list { column-count: 3; }
+
+  .research-list > li:first-child {
     column-span: unset;
     margin: 25px;
     margin-left: 0;

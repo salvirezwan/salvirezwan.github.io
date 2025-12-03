@@ -145,3 +145,29 @@ document.addEventListener("DOMContentLoaded", function () {
     observer.observe(card);
   });
 });
+
+
+
+
+/**
+ * Show research card text on scroll (for mobile)
+ */
+
+document.addEventListener("DOMContentLoaded", function () {
+  const researchCards = document.querySelectorAll(".research-card");
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("in-view");
+        }
+      });
+    },
+    { threshold: 0.3 }
+  );
+
+  researchCards.forEach((card) => {
+    observer.observe(card);
+  });
+});
