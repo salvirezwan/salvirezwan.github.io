@@ -68,19 +68,24 @@ if (isMobile) {
  * skills toggle
  */
 
-const toggleBtnBox = document.querySelector("[data-toggle-box]");
 const toggleBtns = document.querySelectorAll("[data-toggle-btn]");
-const skillsBox = document.querySelector("[data-skills-box]");
+const skillsLists = document.querySelectorAll("[data-skills-content]");
 
-for (let i = 0; i < toggleBtns.length; i++) {
-  toggleBtns[i].addEventListener("click", function () {
+toggleBtns.forEach(btn => {
+  btn.addEventListener("click", () => {
+    toggleBtns.forEach(b => b.classList.remove("active"));
+    btn.classList.add("active");
 
-    elemToggleFunc(toggleBtnBox);
-    for (let i = 0; i < toggleBtns.length; i++) { elemToggleFunc(toggleBtns[i]); }
-    elemToggleFunc(skillsBox);
-
+    const target = btn.getAttribute("data-toggle-btn");
+    skillsLists.forEach(list => {
+      if (list.getAttribute("data-skills-content") === target) {
+        list.classList.add("active");
+      } else {
+        list.classList.remove("active");
+      }
+    });
   });
-}
+});
 
 
 

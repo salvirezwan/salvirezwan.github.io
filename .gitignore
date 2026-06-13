@@ -1,0 +1,40 @@
+# Resume
+Resume - Rezwan Islam Salvi.pdf
+
+# Redundant leftover logo assets from previous iterations
+assets/images/*.svg
+assets/images/chromadb.png
+
+# Redundant template files
+index.txt
+style-guide.md
+
+# Unused template logo PNG images
+assets/images/C++.png
+assets/images/c.png
+assets/images/canva.png
+assets/images/collab.png
+assets/images/command.png
+assets/images/content.png
+assets/images/excel.png
+assets/images/game.png
+assets/images/git.png
+assets/images/html.png
+assets/images/jupyter.png
+assets/images/mysql.png
+assets/images/python-logo.png
+assets/images/pytorch.png
+assets/images/r.png
+assets/images/spreadsheet.png
+assets/images/sql.png
+assets/images/unity.png
+assets/images/vs-code.png
+assets/images/word.png
+
+# OS & IDE temporary files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.log
+

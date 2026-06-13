@@ -15,7 +15,7 @@
   <!-- 
     - custom css link
   -->
-  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/style.css?v=3">
 
   <!-- 
     - google font link
@@ -249,7 +249,7 @@
             Hi! I am Rezwan Islam Salvi, currently working as an AI Engineer at AttenSys AI. I am a Computer Science and Engineering 
             Graduate from the Islamic University of Technology (IUT), Dhaka, Bangladesh. With a strong passion for Data Science, 
             Machine Learning, Artificial Intelligence, Computer Vision and Natural Language Processing, I love to work on innovative 
-            solutions that drive meaningful impact. I am skilled in Python, C++, and SQL, and I continuously strive to expand my expertise in solving complex problems efficiently. I work with PyTorch, TensorFlow, LangChain, LangGraph, Scikit-learn, and SentenceTransformer for Machine Learning and LLM applications. I use OpenCV, Numpy, Pandas, Matplotlib, and Seaborn for Data Analysis and Computer Vision. On the backend, I build APIs with FastAPI and Flask, using Pydantic for structured models, and I work with databases like MongoDB and Vector stores like ChromaDB. I also create automated workflows with n8n, and build interactive demos using Gradio and Streamlit.
+            solutions that drive meaningful impact. I am skilled in Python, C++, and SQL, and I continuously strive to expand my expertise in solving complex problems efficiently. I work with PyTorch, TensorFlow, LangChain, LangGraph, Scikit-learn, and SentenceTransformer for Machine Learning and LLM applications. I use OpenCV, Numpy, Pandas, Matplotlib, and Seaborn for Data Analysis and Computer Vision. On the backend, I build APIs with FastAPI and Flask, using Pydantic for structured models, containerize applications with Docker, and work with databases like MongoDB and Vector stores like ChromaDB. I also create automated workflows with n8n, and build interactive web applications and demos using React, Gradio, and Streamlit.
           </p>
 
           <!-- <div class="btn-group"> -->
@@ -288,227 +288,79 @@
           </p>
 
           <div class="skills-toggle" data-toggle-box>
-            <button class="toggle-btn active" data-toggle-btn>Skills</button>
-
-            <button class="toggle-btn" data-toggle-btn>Tools</button>
+            <button class="toggle-btn active" data-toggle-btn="programming">Languages</button>
+            <button class="toggle-btn" data-toggle-btn="libraries">Frameworks</button>
+            <button class="toggle-btn" data-toggle-btn="tools">Tools</button>
           </div>
 
         </div>
 
         <div class="skills-box" data-skills-box>
 
-          <ul class="skills-list">
+          <div class="skills-list active" data-skills-content="programming">
+            <div class="skills-badge-list">
+              <span class="skill-badge">Python</span>
+              <span class="skill-badge">C++</span>
+              <span class="skill-badge">C</span>
+              <span class="skill-badge">SQL</span>
+              <span class="skill-badge">R</span>
+              <span class="skill-badge">Java</span>
+              <span class="skill-badge">HTML/CSS</span>
+              <span class="skill-badge">JavaScript</span>
+            </div>
+          </div>
 
-            <li>
-              <div class="skill-card">
-                <div class="tooltip">Python</div>
+          <div class="skills-list" data-skills-content="libraries">
+            <div class="skills-badge-list">
+              <span class="skill-badge">PyTorch</span>
+              <span class="skill-badge">TensorFlow</span>
+              <span class="skill-badge">OpenCV</span>
+              <span class="skill-badge">LangChain</span>
+              <span class="skill-badge">LangGraph</span>
+              <span class="skill-badge">FastAPI</span>
+              <span class="skill-badge">ChromaDB</span>
+              <span class="skill-badge">FAISS</span>
+              <span class="skill-badge">Qdrant</span>
+              <span class="skill-badge">SentenceTransformers</span>
+              <span class="skill-badge">NumPy</span>
+              <span class="skill-badge">Pandas</span>
+              <span class="skill-badge">Matplotlib</span>
+              <span class="skill-badge">Seaborn</span>
+              <span class="skill-badge">Scikit-learn</span>
+              <span class="skill-badge">SciPy</span>
+              <span class="skill-badge">Keras</span>
+              <span class="skill-badge">Flask</span>
+              <span class="skill-badge">React</span>
+              <span class="skill-badge">Gradio</span>
+              <span class="skill-badge">Streamlit</span>
+              <span class="skill-badge">Pydantic</span>
+              <span class="skill-badge">DuckDB</span>
+              <!-- <span class="skill-badge">Evidently AI</span> -->
+            </div>
+          </div>
 
-                <div class="card-icon">
-                  <img src="./assets/images/python-logo.png" alt="Python logo">
-                </div>
-              </div>
-            </li>
-
-            <li>
-              <div class="skill-card">
-                <div class="tooltip">C++</div>
-
-                <div class="card-icon">
-                  <img src="./assets/images/C++.png" alt="C++ logo">
-                </div>
-              </div>
-            </li>
-
-            <li>
-              <div class="skill-card">
-                <div class="tooltip">SQL</div>
-
-                <div class="card-icon">
-                  <img src="./assets/images/sql.png" alt="SQL logo">
-                </div>
-              </div>
-            </li>
-
-            <li>
-              <div class="skill-card">
-                <div class="tooltip">PyTorch</div>
-
-                <div class="card-icon">
-                  <img src="./assets/images/pytorch.png" alt="PyTorch logo">
-                </div>
-              </div>
-            </li>
-
-            <li>
-              <div class="skill-card">
-                <div class="tooltip">C</div>
-
-                <div class="card-icon">
-                  <img src="./assets/images/c.png" alt="C logo">
-                </div>
-              </div>
-            </li>
-
-            <li>
-              <div class="skill-card">
-                <div class="tooltip">HTML/CSS</div>
-
-                <div class="card-icon">
-                  <img src="./assets/images/html.png" alt="HTML logo">
-                </div>
-              </div>
-            </li>
-
-            <li>
-              <div class="skill-card">
-                <div class="tooltip">R</div>
-
-                <div class="card-icon">
-                  <img src="./assets/images/r.png" alt="R logo">
-                </div>
-              </div>
-            </li>
-
-            <li>
-              <div class="skill-card">
-                <div class="tooltip">Content Writing</div>
-
-                <div class="card-icon">
-                  <img src="./assets/images/content.png" alt="Content Writing logo">
-                </div>
-              </div>
-            </li>
-
-            <li>
-              <div class="skill-card">
-                <div class="tooltip">Spreadsheets</div>
-
-                <div class="card-icon">
-                  <img src="./assets/images/spreadsheet.png" alt="Spreadsheets logo">
-                </div>
-              </div>
-            </li>
-
-            <li>
-              <div class="skill-card">
-                <div class="tooltip">Game Development</div>
-
-                <div class="card-icon">
-                  <img src="./assets/images/game.png" alt="Game Development logo">
-                </div>
-              </div>
-            </li>
-
-
-          </ul>
-
-          <ul class="tools-list">
-
-            <li>
-              <div class="skill-card">
-                <div class="tooltip">Google Colab</div>
-
-                <div class="card-icon">
-                  <img src="./assets/images/collab.png" alt="Google Collab logo">
-                </div>
-              </div>
-            </li>
-
-            <li>
-              <div class="skill-card">
-                <div class="tooltip">Jupyter Notebook</div>
-
-                <div class="card-icon">
-                  <img src="./assets/images/jupyter.png" alt="Jupyter Notebook logo">
-                </div>
-              </div>
-            </li>
-
-            <li>
-              <div class="skill-card">
-                <div class="tooltip">VS Code/Visual Studio</div>
-
-                <div class="card-icon">
-                  <img src="./assets/images/vs-code.png" alt="VS Code logo">
-                </div>
-              </div>
-            </li>
-
-            <li>
-              <div class="skill-card">
-                <div class="tooltip">MySQL/Oracle SQL</div>
-
-                <div class="card-icon">
-                  <img src="./assets/images/mysql.png" alt="MySQL logo">
-                </div>
-              </div>
-            </li>
-
-            
-
-            <li>
-              <div class="skill-card">
-                <div class="tooltip">MS Excel/Google Sheets</div>
-
-                <div class="card-icon">
-                  <img src="./assets/images/excel.png" alt="MS Excel logo">
-                </div>
-              </div>
-            </li>
-
-            <li>
-              <div class="skill-card">
-                <div class="tooltip">Command Line</div>
-
-                <div class="card-icon">
-                  <img src="./assets/images/command.png" alt="Command Line logo">
-                </div>
-              </div>
-            </li>
-
-            <li>
-              <div class="skill-card">
-                <div class="tooltip">Git</div>
-
-                <div class="card-icon">
-                  <img src="./assets/images/git.png" alt="Git logo">
-                </div>
-              </div>
-            </li>
-    
-
-            <li>
-              <div class="skill-card">
-                <div class="tooltip">Unity</div>
-
-                <div class="card-icon">
-                  <img src="./assets/images/unity.png" alt="Unity logo">
-                </div>
-              </div>
-            </li>
-
-            <li>
-              <div class="skill-card">
-                <div class="tooltip">Canva</div>
-
-                <div class="card-icon">
-                  <img src="./assets/images/canva.png" alt="Canva logo">
-                </div>
-              </div>
-            </li>
-
-            <li>
-              <div class="skill-card">
-                <div class="tooltip">MS Word/Google Docs</div>
-
-                <div class="card-icon">
-                  <img src="./assets/images/word.png" alt="MS Word logo">
-                </div>
-              </div>
-            </li>
-
-
-          </ul>
+          <div class="skills-list" data-skills-content="tools">
+            <div class="skills-badge-list">
+              <span class="skill-badge">VS Code</span>
+              <span class="skill-badge">Google Colab</span>
+              <span class="skill-badge">Kaggle</span>
+              <span class="skill-badge">MongoDB</span>
+              <span class="skill-badge">Git</span>
+              <span class="skill-badge">Docker</span>
+              <span class="skill-badge">Postman</span>
+              <span class="skill-badge">MySQL Workbench</span>
+              <span class="skill-badge">n8n</span>
+              <span class="skill-badge">Unity</span>
+              <span class="skill-badge">MS Excel</span>
+              <span class="skill-badge">Tableau</span>
+              <span class="skill-badge">BigQuery</span>
+              <span class="skill-badge">DVC</span>
+              <span class="skill-badge">MLflow</span>
+              <span class="skill-badge">GitHub Actions</span>
+              <span class="skill-badge">Prometheus</span>
+              <span class="skill-badge">Grafana</span>
+            </div>
+          </div>
 
         </div>
 
@@ -541,6 +393,66 @@
 
 
           
+          <li>
+            <a href="https://github.com/salvirezwan/Research-Paper-RAG-chatbot" class="project-card" target="_blank">
+              <figure class="card-banner">
+                <img src="./assets/images/rag-academic.png" class="w-100" alt="Agentic RAG Chatbot for Academic Research logo">
+              </figure>
+          
+              <div class="card-content">
+                <h3 class="h4 card-title">Agentic RAG Chatbot for Research</h3>
+          
+                <time class="publish-date" datetime="2025-12">December 2025</time>
+              </div>
+          
+            </a>
+          </li>
+
+          <li>
+            <a href="https://github.com/salvirezwan/Traffic-Video-Analytics-Project" class="project-card" target="_blank">
+              <figure class="card-banner">
+                <img src="./assets/images/traffic-analytics.png" class="w-100" alt="Real-Time Traffic Video Analytics logo">
+              </figure>
+          
+              <div class="card-content">
+                <h3 class="h4 card-title">Real-Time Traffic Video Analytics</h3>
+          
+                <time class="publish-date" datetime="2025-11">November 2025</time>
+              </div>
+          
+            </a>
+          </li>
+
+          <li>
+            <a href="https://github.com/salvirezwan/E-commerce-AI-Agent" class="project-card" target="_blank">
+              <figure class="card-banner">
+                <img src="./assets/images/messenger-agent.png" class="w-100" alt="E-Commerce AI Agent for Facebook Messenger logo">
+              </figure>
+          
+              <div class="card-content">
+                <h3 class="h4 card-title">E-Commerce AI Agent for Messenger</h3>
+          
+                <time class="publish-date" datetime="2025-09">September 2025</time>
+              </div>
+          
+            </a>
+          </li>
+
+          <li>
+            <a href="https://github.com/salvirezwan/MLOPS-Drift-Pipeline-Project" class="project-card" target="_blank">
+              <figure class="card-banner">
+                <img src="./assets/images/mlops-pipeline.png" class="w-100" alt="Automated MLOps Pipeline logo">
+              </figure>
+          
+              <div class="card-content">
+                <h3 class="h4 card-title">Automated MLOps Pipeline</h3>
+          
+                <time class="publish-date" datetime="2025-08">August 2025</time>
+              </div>
+          
+            </a>
+          </li>
+
           <li>
             <a href="https://github.com/salvirezwan/Agentic-AI-for-Corporate-Innovation-Workflow-Automation" class="project-card" target="_blank">
               <figure class="card-banner">
@@ -968,7 +880,7 @@
   <!-- 
     - custom js link
   -->
-  <script src="./assets/js/script.js"></script>
+  <script src="./assets/js/script.js?v=2"></script>
 
   <!-- 
     - ionicon link
